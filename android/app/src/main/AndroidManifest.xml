@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.fastfud_app">
+    package="com.example.fastfud">
    <application
-        android:label="fastfud_app"
+        android:label="fastfud"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
