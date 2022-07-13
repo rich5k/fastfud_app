@@ -50,12 +50,23 @@ class OnboardPage1 extends StatelessWidget{
                 ),
               ),
             ),
-            Container(
-              child: Text(
-                'Next',
-                style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(40.0),
+              child: Container(
+                color: Colors.blue,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 20.0),
+                  child: TextButton(
+                    onPressed: (){print('clicked');},
+                    child: Text(
+                      'Next',
+                      style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    ),
+                  ),
+                ),
               ),
             ),
             SizedBox(height: 20.0,),
