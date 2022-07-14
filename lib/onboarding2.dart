@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'onboarding3.dart';
 class OnboardPage2 extends StatelessWidget{
 
   @override
