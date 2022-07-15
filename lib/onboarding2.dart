@@ -4,8 +4,7 @@ class OnboardPage2 extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         backgroundColor: Colors.white,
         body: Center(
           child: Padding(
@@ -77,7 +76,6 @@ class OnboardPage2 extends StatelessWidget{
             ),
           ),
         ),
-      ),
     );
   }
 }
