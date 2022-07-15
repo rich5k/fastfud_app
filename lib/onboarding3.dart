@@ -13,7 +13,7 @@ class OnboardPage3 extends StatelessWidget{
             SizedBox(height: 50.0),
             ClipRRect(
               borderRadius: BorderRadius.circular(40.0),
-              child: Image.asset('images/onboardpic3.jpg'),
+              child: Image.asset('images/onboardpic3.png'),
             ),
             SizedBox(height: 20.0,),
             Container(
