@@ -61,7 +61,7 @@ flutter:
   assets:
     - images/onboardpic1.jpg
     - images/onboardpic2.jpg
-    - images/onboardpic3.jpg
+    - images/onboardpic3.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
