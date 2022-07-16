@@ -14,7 +14,7 @@ class OnboardPage2 extends StatelessWidget{
                 SizedBox(height: 50.0),
                 ClipRRect(
                   borderRadius: BorderRadius.circular(40.0),
-                  child: Image.asset('images/onboardpic2.jpg'),
+                  child: Image.asset('images/onboardpic2.png'),
                 ),
                 SizedBox(height: 20.0,),
                 Container(
