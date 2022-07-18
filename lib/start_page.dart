@@ -1,6 +1,16 @@
 import 'package:flutter/material.dart';
+import 'dart:async';
 
 class StartPage extends StatelessWidget{
+  // Timer _timer;
+  // _Act_NotificationScreenState() {
+  //   _timer = new Timer(const Duration(milliseconds: 800), () {
+  //
+  //     _timer = new Timer(const Duration(seconds: 1), () {
+  //       Navigator.push(context, MaterialPageRoute(builder: (context) => Act_Login()));
+  //     });
+  //   });
+  // }
   
   @override
   Widget build(BuildContext context){

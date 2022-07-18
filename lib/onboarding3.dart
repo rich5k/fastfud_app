@@ -1,4 +1,4 @@
-import 'package:fastfud/onboarding1.dart';
+import 'package:fastfud/menu.dart';
 import 'package:flutter/material.dart';
 
 class OnboardPage3 extends StatelessWidget{
@@ -47,7 +47,7 @@ class OnboardPage3 extends StatelessWidget{
                       child: TextButton(
                         onPressed: (){
                           Navigator.push(context, MaterialPageRoute(builder: (context){
-                            return OnboardPage1();
+                            return MenuPage();
                           }));
                         },
                         child: Text(
