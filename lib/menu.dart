@@ -11,16 +11,57 @@ class MenuPage extends StatelessWidget{
           child: Column(
             children: [
               SizedBox(height: 50.0),
+              Row(
+                children: [
+                  SizedBox(width: 20.0,),
+                  Container(
+                    child: Text(
+                      'Delicious asian food',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 26
+                      )
+                    ),
+                  ),
+                  SizedBox(width: 20.0,),
+                  Icon(
+                    Icons.search,
+                    color: Color.fromRGBO(0, 160 , 173, 1.0),
+                    size: 28.0,
+                  )
+                ],
+              ),
+              SizedBox(height: 10.0),
               Container(
                 child: Text(
-                  'Delicious asian food',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 26
-                  )
+                    'FastFud is ensuring your hunger is checked',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                        fontSize: 16
+                    )
                 ),
-              )
+              ),
+              SizedBox(height: 20.0,),
+              Container(
+                child: Text(
+                    'Popular and new',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 26
+                    )
+                ),
+              ),
+              SizedBox(height: 20.0,),
+              Container(
+                child: Text(
+                    'Categories',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 26
+                    )
+                ),
+              ),
             ],
           )
         ),
