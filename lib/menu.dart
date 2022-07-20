@@ -62,6 +62,83 @@ class MenuPage extends StatelessWidget{
                     )
                 ),
               ),
+              SizedBox(height: 20.0,),
+              Row(
+                children: [
+                  SizedBox(width: 10.0,),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(40.0),
+                    child: Container(
+                      color: Color.fromRGBO(0, 160, 173, 1.0),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10.0),
+                        child: TextButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return MenuPage();
+                            }));
+                          },
+                          child: Text(
+                            'Snacks',
+                            style: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 20.0,),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(40.0),
+                    child: Container(
+                      color: Color.fromRGBO(236, 234, 232, 1.0),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10.0),
+                        child: TextButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return MenuPage();
+                            }));
+                          },
+                          child: Text(
+                            'Soups',
+                            style: const TextStyle(
+                                color: Color.fromRGBO(176, 171, 166, 1.0),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 20.0,),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(40.0),
+                    child: Container(
+                      color: Color.fromRGBO(236, 234, 232, 1.0),
+                      child: Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10.0),
+                        child: TextButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return MenuPage();
+                            }));
+                          },
+                          child: Text(
+                            'Wok',
+                            style: const TextStyle(
+                                color: Color.fromRGBO(176, 171, 166, 1.0),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           )
         ),
