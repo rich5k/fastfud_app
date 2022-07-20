@@ -62,6 +62,10 @@ flutter:
     - images/onboardpic1.jpg
     - images/onboardpic2.png
     - images/onboardpic3.png
+    - images/menupic1.jpg
+    - images/menupic2.jpg
+    - images/menupic3.jpg
+    - images/menupic4.jpg
     - images/bike_icon.png
   #   - images/a_dot_ham.jpeg
 
