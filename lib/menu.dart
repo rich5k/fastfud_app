@@ -72,18 +72,23 @@ class MenuPage extends StatelessWidget{
                       color: Color.fromRGBO(0, 160, 173, 1.0),
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: TextButton(
+                        child: ElevatedButton.icon(
                           onPressed: (){
                             Navigator.push(context, MaterialPageRoute(builder: (context){
                               return MenuPage();
                             }));
                           },
-                          child: Text(
+                          icon: Icon(
+                            Icons.soup_kitchen_rounded,
+                            color: Color.fromRGBO(0, 160 , 173, 1.0),
+                            size: 20.0,
+                          ),
+                          label: Text(
                             'Snacks',
                             style: const TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 18),
+                                fontSize: 14),
                           ),
                         ),
                       ),
@@ -96,18 +101,23 @@ class MenuPage extends StatelessWidget{
                       color: Color.fromRGBO(236, 234, 232, 1.0),
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: TextButton(
+                        child: ElevatedButton.icon(
                           onPressed: (){
                             Navigator.push(context, MaterialPageRoute(builder: (context){
                               return MenuPage();
                             }));
                           },
-                          child: Text(
+                          icon: Icon(
+                            Icons.soup_kitchen_rounded,
+                            color: Color.fromRGBO(0, 160 , 173, 1.0),
+                            size: 20.0,
+                          ),
+                          label: Text(
                             'Soups',
                             style: const TextStyle(
                                 color: Color.fromRGBO(176, 171, 166, 1.0),
                                 fontWeight: FontWeight.bold,
-                                fontSize: 18),
+                                fontSize: 14),
                           ),
                         ),
                       ),
@@ -120,18 +130,23 @@ class MenuPage extends StatelessWidget{
                       color: Color.fromRGBO(236, 234, 232, 1.0),
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: TextButton(
+                        child: ElevatedButton.icon(
                           onPressed: (){
                             Navigator.push(context, MaterialPageRoute(builder: (context){
                               return MenuPage();
                             }));
                           },
-                          child: Text(
+                          icon: Icon(
+                            Icons.soup_kitchen_rounded,
+                            color: Color.fromRGBO(0, 160 , 173, 1.0),
+                            size: 20.0,
+                          ),
+                          label: Text(
                             'Wok',
                             style: const TextStyle(
                                 color: Color.fromRGBO(176, 171, 166, 1.0),
                                 fontWeight: FontWeight.bold,
-                                fontSize: 18),
+                                fontSize: 14),
                           ),
                         ),
                       ),
