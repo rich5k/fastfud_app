@@ -66,89 +66,86 @@ class MenuPage extends StatelessWidget{
               Row(
                 children: [
                   SizedBox(width: 10.0,),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(40.0),
-                    child: Container(
-                      color: Color.fromRGBO(0, 160, 173, 1.0),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: ElevatedButton.icon(
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context){
-                              return MenuPage();
-                            }));
-                          },
-                          icon: Icon(
-                            Icons.soup_kitchen_rounded,
-                            color: Color.fromRGBO(0, 160 , 173, 1.0),
-                            size: 20.0,
-                          ),
-                          label: Text(
-                            'Snacks',
-                            style: const TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 14),
-                          ),
+                  Container(
+                    child: ElevatedButton.icon(
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context){
+                          return MenuPage();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(0, 160, 173, 1.0),
+                        shape: new RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(40.0),
                         ),
+                      ),
+                      icon: Icon(
+                        Icons.soup_kitchen_rounded,
+                        color: Colors.white,
+                        size: 20.0,
+                      ),
+                      label: Text(
+                        'Snacks',
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14),
                       ),
                     ),
                   ),
                   SizedBox(width: 20.0,),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(40.0),
-                    child: Container(
-                      color: Color.fromRGBO(236, 234, 232, 1.0),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: ElevatedButton.icon(
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context){
-                              return MenuPage();
-                            }));
-                          },
-                          icon: Icon(
-                            Icons.soup_kitchen_rounded,
-                            color: Color.fromRGBO(0, 160 , 173, 1.0),
-                            size: 20.0,
-                          ),
-                          label: Text(
-                            'Soups',
-                            style: const TextStyle(
-                                color: Color.fromRGBO(176, 171, 166, 1.0),
-                                fontWeight: FontWeight.bold,
-                                fontSize: 14),
-                          ),
+                  Container(
+                    child: ElevatedButton.icon(
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context){
+                          return MenuPage();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(236, 234, 232, 1.0),
+                        shape: new RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(40.0),
                         ),
+                      ),
+                      icon: Icon(
+                        Icons.soup_kitchen_rounded,
+                        color: Color.fromRGBO(176, 171, 166, 1.0),
+                        size: 20.0,
+                      ),
+                      label: Text(
+                        'Soups',
+                        style: const TextStyle(
+                            color: Color.fromRGBO(176, 171, 166, 1.0),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14),
                       ),
                     ),
                   ),
                   SizedBox(width: 20.0,),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(40.0),
-                    child: Container(
-                      color: Color.fromRGBO(236, 234, 232, 1.0),
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 10.0),
-                        child: ElevatedButton.icon(
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context){
-                              return MenuPage();
-                            }));
-                          },
-                          icon: Icon(
-                            Icons.soup_kitchen_rounded,
-                            color: Color.fromRGBO(0, 160 , 173, 1.0),
-                            size: 20.0,
-                          ),
-                          label: Text(
-                            'Wok',
-                            style: const TextStyle(
-                                color: Color.fromRGBO(176, 171, 166, 1.0),
-                                fontWeight: FontWeight.bold,
-                                fontSize: 14),
-                          ),
+                  Container(
+                    child: ElevatedButton.icon(
+                      onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context){
+                          return MenuPage();
+                        }));
+                      },
+                      style: ElevatedButton.styleFrom(
+                          primary: Color.fromRGBO(236, 234, 232, 1.0),
+                        shape: new RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(40.0),
                         ),
+                      ),
+                      icon: Icon(
+                        Icons.soup_kitchen_rounded,
+                        color: Color.fromRGBO(176, 171, 166, 1.0),
+                        size: 20.0,
+                      ),
+                      label: Text(
+                        'Wok',
+                        style: const TextStyle(
+                            color: Color.fromRGBO(176, 171, 166, 1.0),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14),
                       ),
                     ),
                   ),
