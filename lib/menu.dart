@@ -44,6 +44,16 @@ class MenuPage extends StatelessWidget{
               ),
               SizedBox(height: 20.0,),
               Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                  image: DecorationImage(
+                    image: AssetImage('images/menupic1.jpg')
+                  )
+                ),
+                child: Center(child: Text('test'),),
+              ),
+              SizedBox(height: 20.0,),
+              Container(
                 child: Text(
                     'Popular and new',
                     style: const TextStyle(
