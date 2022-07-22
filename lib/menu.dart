@@ -44,6 +44,8 @@ class MenuPage extends StatelessWidget{
               ),
               SizedBox(height: 20.0,),
               Container(
+                width: MediaQuery.of(context).size.width - 100.0,
+                height: 150.0,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   image: DecorationImage(
