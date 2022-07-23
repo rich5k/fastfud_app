@@ -52,7 +52,7 @@ class MenuPage extends StatelessWidget{
                     image: AssetImage('images/menupic1.jpg')
                   )
                 ),
-                child: Center(child: Text('test'),),
+                child: Center(child: Text('Taste Yourself Day',),),
               ),
               SizedBox(height: 20.0,),
               Container(
