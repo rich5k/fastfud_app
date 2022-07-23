@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'onboarding3.dart';
+import 'menu.dart';
 class OnboardPage2 extends StatelessWidget{
 
   @override
@@ -62,16 +63,21 @@ class OnboardPage2 extends StatelessWidget{
                 ),
                 SizedBox(height: 20.0,),
                 Container(
-                  child: Text(
-                    'Skip',
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18),
+                  child: TextButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context){
+                        return MenuPage();
+                      }));
+                    },
+                    child: Text(
+                      'Skip',
+                      style: const TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    ),
                   ),
                 ),
-
-
-
               ],
             ),
           ),

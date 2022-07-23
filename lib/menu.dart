@@ -43,16 +43,20 @@ class MenuPage extends StatelessWidget{
                 ),
               ),
               SizedBox(height: 20.0,),
-              Container(
-                width: MediaQuery.of(context).size.width - 100.0,
-                height: 150.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  image: DecorationImage(
-                    image: AssetImage('images/menupic1.jpg')
-                  )
+              Row(
+                children: [
+                  Container(
+                  width: MediaQuery.of(context).size.width - 100.0,
+                  height: 150.0,
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20.0),
+                      image: DecorationImage(
+                          image: AssetImage('images/menupic1.jpg')
+                      )
+                  ),
+                  child: Center(child: Text('Taste Yourself Day',),),
                 ),
-                child: Center(child: Text('Taste Yourself Day',),),
+                ]
               ),
               SizedBox(height: 20.0,),
               Container(
