@@ -46,10 +46,10 @@ class MenuPage extends StatelessWidget{
               Row(
                 children: [
                   Container(
-                  width: MediaQuery.of(context).size.width - 100.0,
+                  // width: MediaQuery.of(context).size.width - 100.0,
                   height: 150.0,
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(20.0),
+                      borderRadius: BorderRadius.circular(40.0),
                       image: DecorationImage(
                           image: AssetImage('images/menupic1.jpg')
                       )
