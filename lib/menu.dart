@@ -167,6 +167,88 @@ class MenuPage extends StatelessWidget{
                   ),
                 ],
               ),
+              Padding(
+                padding: const EdgeInsets.all(45.0),
+                child: Row(
+                  children: [
+                    Container(
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.soup_kitchen_rounded,
+                            color: Color.fromRGBO(0, 160, 173, 1.0),
+                            size: 20.0,
+                          ),
+                          Text(
+                            'Menu',
+                            style: const TextStyle(
+                                color: Color.fromRGBO(0, 160, 173, 1.0),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 38.0,),
+                    Container(
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.soup_kitchen_rounded,
+                            color: Color.fromRGBO(176, 171, 166, 1.0),
+                            size: 20.0,
+                          ),
+                          Text(
+                            'Favorites',
+                            style: const TextStyle(
+                                color: Color.fromRGBO(176, 171, 166, 1.0),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 38.0,),
+                    Container(
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.soup_kitchen_rounded,
+                            color: Color.fromRGBO(176, 171, 166, 1.0),
+                            size: 20.0,
+                          ),
+                          Text(
+                            'Profile',
+                            style: const TextStyle(
+                                color: Color.fromRGBO(176, 171, 166, 1.0),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(width: 38.0,),
+                    Container(
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.soup_kitchen_rounded,
+                            color: Color.fromRGBO(176, 171, 166, 1.0),
+                            size: 20.0,
+                          ),
+                          Text(
+                            'Cart',
+                            style: const TextStyle(
+                                color: Color.fromRGBO(176, 171, 166, 1.0),
+                                fontWeight: FontWeight.bold,
+                                fontSize: 14),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
             ],
           )
         ),
