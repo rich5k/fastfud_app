@@ -166,6 +166,23 @@ class MenuPage extends StatelessWidget{
                 ),
               ],
             ),
+            SizedBox(height: 20.0,),
+            Padding(
+              padding: const EdgeInsets.all(50.0),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(40.0),
+                child: Row(
+                  children: [
+                    Container(
+                      child: Image.asset('images/menupic3.jpg'),
+                    ),
+                    Container()
+
+
+                  ],
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: ClipRRect(
