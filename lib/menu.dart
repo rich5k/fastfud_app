@@ -6,8 +6,9 @@ class MenuPage extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.all(10.0),
+        padding: EdgeInsets.all(20.0),
         child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 50.0),
             Row(
@@ -19,7 +20,7 @@ class MenuPage extends StatelessWidget{
                     textAlign: TextAlign.center,
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 26
+                      fontSize: 24
                     )
                   ),
                 ),
@@ -31,14 +32,16 @@ class MenuPage extends StatelessWidget{
                 )
               ],
             ),
-            SizedBox(height: 10.0),
-            Container(
-              child: Text(
-                  'FastFud is ensuring your hunger is checked',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                      fontSize: 16
-                  )
+            SizedBox(height: 3.0),
+            Center(
+              child: Container(
+                child: Text(
+                    'FastFud is ensuring your hunger is checked',
+                    textAlign: TextAlign.center,
+                    style: const TextStyle(
+                        fontSize: 16
+                    )
+                ),
               ),
             ),
             SizedBox(height: 20.0,),
@@ -63,21 +66,36 @@ class MenuPage extends StatelessWidget{
                   'Popular and new',
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 26
+                      fontSize: 24
                   )
               ),
+            ),
+            SizedBox(height: 10.0,),
+            Row(
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(30.0),
+                  child: Image.asset(
+                    'images/menupic2.jpg',
+                    height:100,
+                    width:200,
+                      fit:BoxFit.fill
+                  ),
+                )
+              ],
             ),
             SizedBox(height: 20.0,),
             Container(
               child: Text(
                   'Categories',
+                  textAlign: TextAlign.left,
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 26
+                      fontSize: 24
                   )
               ),
             ),
-            SizedBox(height: 20.0,),
+            SizedBox(height: 10.0,),
             Row(
               children: [
                 SizedBox(width: 10.0,),
@@ -167,20 +185,39 @@ class MenuPage extends StatelessWidget{
               ],
             ),
             SizedBox(height: 20.0,),
-            Padding(
-              padding: const EdgeInsets.all(50.0),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(40.0),
-                child: Row(
-                  children: [
-                    Container(
-                      child: Image.asset('images/menupic3.jpg'),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(40.0),
+              child: Row(
+                children: [
+                  Container(
+                    // margin: EdgeInsets.only(left:20.0),
+                    child: Image.asset(
+                        'images/menupic3.jpg',
+                      height:120,
+                      width:120,
                     ),
-                    Container()
+                  ),
+                  Container(
+                    child: Column(
+                      children: [
+                        Text(
+                            'Wasabi Shrimps',
+                          textAlign: TextAlign.left,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 12),
+                        ),
+                        SizedBox(height: 20.0,),
+                        // Text(
+                        //       'Shrimp in crispy and sweet wasabi sauce, daikon,'
+                        //       'Pal potatoes, flying fish noe, Kimichi sesame'
+                        // ),
+                      ],
+                    ),
+                  )
 
 
-                  ],
-                ),
+                ],
               ),
             ),
             Padding(
