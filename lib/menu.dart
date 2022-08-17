@@ -10,7 +10,7 @@ class MenuPage extends StatelessWidget{
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 50.0),
+            SizedBox(height: 20.0),
             Row(
               children: [
                 SizedBox(width: 20.0,),
@@ -49,7 +49,7 @@ class MenuPage extends StatelessWidget{
               children: [
                 Container(
                 // width: MediaQuery.of(context).size.width - 100.0,
-                height: 150.0,
+                height: 120.0,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(40.0),
                     image: DecorationImage(
