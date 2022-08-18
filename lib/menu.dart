@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'profile.dart';
 
 class MenuPage extends StatelessWidget{
 
@@ -184,7 +185,7 @@ class MenuPage extends StatelessWidget{
                 ),
               ],
             ),
-            SizedBox(height: 20.0,),
+            SizedBox(height: 10.0,),
             ClipRRect(
               borderRadius: BorderRadius.circular(40.0),
               child: Row(
@@ -267,26 +268,33 @@ class MenuPage extends StatelessWidget{
                             ],
                           ),
                         ),
-                        SizedBox(width: 38.0,),
+                        SizedBox(width: 28.0,),
                         Container(
-                          child: Column(
-                            children: [
-                              Icon(
-                                Icons.account_circle_outlined ,
-                                color: Color.fromRGBO(176, 171, 166, 1.0),
-                                size: 20.0,
-                              ),
-                              Text(
-                                'Profile',
-                                style: const TextStyle(
-                                    color: Color.fromRGBO(176, 171, 166, 1.0),
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 14),
-                              ),
-                            ],
+                          child: TextButton(
+                            onPressed: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context){
+                                return ProfilePage();
+                              }));
+                            },
+                            child: Column(
+                              children: [
+                                Icon(
+                                  Icons.account_circle_outlined ,
+                                  color: Color.fromRGBO(176, 171, 166, 1.0),
+                                  size: 20.0,
+                                ),
+                                Text(
+                                  'Profile',
+                                  style: const TextStyle(
+                                      color: Color.fromRGBO(176, 171, 166, 1.0),
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 14),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                        SizedBox(width: 38.0,),
+                        SizedBox(width: 28.0,),
                         Container(
                           child: Column(
                             children: [
