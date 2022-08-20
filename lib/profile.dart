@@ -27,7 +27,11 @@ class ProfilePage extends StatelessWidget{
           SizedBox(height: 40.0),
           Container(
             child: Text(
-                'Richard Jones'
+                'Richard Jones',
+              style: const TextStyle(
+                  // color: Color.fromRGBO(176, 171, 166, 1.0),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24),
             ),
           ),
           SizedBox(height: 20.0),
@@ -45,9 +49,14 @@ class ProfilePage extends StatelessWidget{
           SizedBox(height: 60.0),
           Container(
             child: Text(
-              'log out'
+              'log out',
+              style: const TextStyle(
+                  color: Color.fromRGBO(0, 160, 173, 1.0),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14),
             ),
           ),
+          SizedBox(height: 70.0),
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: ClipRRect(
@@ -63,13 +72,13 @@ class ProfilePage extends StatelessWidget{
                           children: [
                             Icon(
                               Icons.restaurant_menu,
-                              color: Color.fromRGBO(0, 160, 173, 1.0),
+                              color: Color.fromRGBO(176, 171, 166, 1.0),
                               size: 20.0,
                             ),
                             Text(
                               'Menu',
                               style: const TextStyle(
-                                  color: Color.fromRGBO(0, 160, 173, 1.0),
+                                  color: Color.fromRGBO(176, 171, 166, 1.0),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 14),
                             ),
@@ -107,13 +116,13 @@ class ProfilePage extends StatelessWidget{
                             children: [
                               Icon(
                                 Icons.account_circle_outlined ,
-                                color: Color.fromRGBO(176, 171, 166, 1.0),
+                                color: Color.fromRGBO(0, 160, 173, 1.0),
                                 size: 20.0,
                               ),
                               Text(
                                 'Profile',
                                 style: const TextStyle(
-                                    color: Color.fromRGBO(176, 171, 166, 1.0),
+                                    color: Color.fromRGBO(0, 160, 173, 1.0),
                                     fontWeight: FontWeight.bold,
                                     fontSize: 14),
                               ),
