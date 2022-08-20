@@ -10,12 +10,18 @@ class ProfilePage extends StatelessWidget{
       body: Column(
         children: [
           SizedBox(height: 60.0),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(100.0),
-            child: Image.asset(
-                'images/profile pic.jpg',
-              width: 200,
-              height: 200,
+          Container(
+            margin: EdgeInsets.all(20),
+            width: 200,
+            height: 200,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              image: DecorationImage(
+                  image: AssetImage(
+                      'images/profile pic.jpg'
+                  ),
+                  fit: BoxFit.fill
+              ),
             ),
           ),
           SizedBox(height: 40.0),
