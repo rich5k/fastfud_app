@@ -12,6 +12,7 @@ class CartPage extends StatelessWidget{
           padding: EdgeInsets.all(20.0),
         child: Column(
           children: [
+            SizedBox(height: 30.0),
             Container(
               child: Text(
                 'Cart',
@@ -21,7 +22,84 @@ class CartPage extends StatelessWidget{
                 ),
               ),
             ),
+            SizedBox(height: 10.0,),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(40.0),
+              child: Row(
+                children: [
+                  Container(
+                    // margin: EdgeInsets.only(left:20.0),
+                    child: Image.asset(
+                      'images/menupic3.jpg',
+                      height:120,
+                      width:120,
+                    ),
+                  ),
+                  Container(
+                    child: Column(
+                      children: [
+                        Text(
+                          'Wasabi Shrimps',
+                          textAlign: TextAlign.left,
+                          style: const TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 16),
+                        ),
+                        SizedBox(height: 20.0,),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30.0),
+                          child: Container(
+                            color: Color.fromRGBO(0, 160, 173, 1.0),
+                            child: Padding(
+                              padding: const EdgeInsets.all(6.0),
+                              child: Text(
+                                'GHS 53',
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 12),
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 20.0,),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30.0),
+                          child: Container(
+                            color: Color.fromRGBO(176, 171, 166, 1.0),
+                            child: Padding(
+                              padding: const EdgeInsets.all(6.0),
+                              child: Icon(
+                                Icons.remove,
+                                color: Colors.white,
+                                size: 20.0,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 20.0,),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(30.0),
+                          child: Container(
+                            color: Color.fromRGBO(0, 160, 173, 1.0),
+                            child: Padding(
+                              padding: const EdgeInsets.all(6.0),
+                              child: Icon(
+                                Icons.add,
+                                color: Colors.white,
+                                size: 20.0,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  )
 
+
+                ],
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: ClipRRect(
