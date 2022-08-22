@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'profile.dart';
 import 'menu.dart';
+import 'cart.dart';
 
 class ProfilePage extends StatelessWidget{
 
@@ -109,7 +110,7 @@ class ProfilePage extends StatelessWidget{
                         child: TextButton(
                           onPressed: (){
                             Navigator.push(context, MaterialPageRoute(builder: (context){
-                              return MenuPage();
+                              return ProfilePage();
                             }));
                           },
                           child: Column(
@@ -132,21 +133,28 @@ class ProfilePage extends StatelessWidget{
                       ),
                       SizedBox(width: 38.0,),
                       Container(
-                        child: Column(
-                          children: [
-                            Icon(
-                              Icons.shopping_cart,
-                              color: Color.fromRGBO(176, 171, 166, 1.0),
-                              size: 20.0,
-                            ),
-                            Text(
-                              'Cart',
-                              style: const TextStyle(
-                                  color: Color.fromRGBO(176, 171, 166, 1.0),
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 14),
-                            ),
-                          ],
+                        child: TextButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return CartPage();
+                            }));
+                          },
+                          child: Column(
+                            children: [
+                              Icon(
+                                Icons.shopping_cart,
+                                color: Color.fromRGBO(176, 171, 166, 1.0),
+                                size: 20.0,
+                              ),
+                              Text(
+                                'Cart',
+                                style: const TextStyle(
+                                    color: Color.fromRGBO(176, 171, 166, 1.0),
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14),
+                              ),
+                            ],
+                          ),
                         ),
                       )
                     ],
