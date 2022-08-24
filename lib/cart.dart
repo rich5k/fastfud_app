@@ -63,35 +63,46 @@ class CartPage extends StatelessWidget{
                           ),
                         ),
                         SizedBox(height: 20.0,),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(30.0),
-                          child: Container(
-                            color: Color.fromRGBO(176, 171, 166, 1.0),
-                            child: Padding(
-                              padding: const EdgeInsets.all(6.0),
-                              child: Icon(
-                                Icons.remove,
-                                color: Colors.white,
-                                size: 20.0,
+                        Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(30.0),
+                              child: Container(
+                                color: Color.fromRGBO(176, 171, 166, 1.0),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(6.0),
+                                  child: Icon(
+                                    Icons.remove,
+                                    color: Colors.white,
+                                    size: 20.0,
+                                  ),
+                                ),
                               ),
                             ),
-                          ),
+                            SizedBox(width: 20.0,),
+                            Container(
+                              child: Text(
+                                '1'
+                              ),
+                            ),
+                            SizedBox(width: 20.0,),
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(30.0),
+                              child: Container(
+                                color: Color.fromRGBO(0, 160, 173, 1.0),
+                                child: Padding(
+                                  padding: const EdgeInsets.all(6.0),
+                                  child: Icon(
+                                    Icons.add,
+                                    color: Colors.white,
+                                    size: 20.0,
+                                  ),
+                                ),
+                              ),
+                            )
+                          ],
                         ),
-                        SizedBox(height: 20.0,),
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(30.0),
-                          child: Container(
-                            color: Color.fromRGBO(0, 160, 173, 1.0),
-                            child: Padding(
-                              padding: const EdgeInsets.all(6.0),
-                              child: Icon(
-                                Icons.add,
-                                color: Colors.white,
-                                size: 20.0,
-                              ),
-                            ),
-                          ),
-                        )
+
                       ],
                     ),
                   )
