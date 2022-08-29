@@ -105,7 +105,7 @@ class ProfilePage extends StatelessWidget{
                           ],
                         ),
                       ),
-                      SizedBox(width: 38.0,),
+                      SizedBox(width: 28.0,),
                       Container(
                         child: TextButton(
                           onPressed: (){
@@ -131,7 +131,7 @@ class ProfilePage extends StatelessWidget{
                           ),
                         ),
                       ),
-                      SizedBox(width: 38.0,),
+                      SizedBox(width: 18.0,),
                       Container(
                         child: TextButton(
                           onPressed: (){
