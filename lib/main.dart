@@ -1,7 +1,7 @@
-import 'package:fastfud/onboarding1.dart';
 import 'package:flutter/material.dart';
 // import 'start_page.dart';
 import 'onboarding1.dart';
+import 'contact.dart';
 void main() {
   return runApp(
       FastFud()
@@ -13,7 +13,7 @@ class FastFud extends StatelessWidget{
 
   Widget build(BuildContext context){
     return MaterialApp(
-      home: OnboardPage1(),
+      home: ContactPage(),
     );
   }
 }
