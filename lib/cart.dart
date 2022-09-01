@@ -350,6 +350,30 @@ class CartPage extends StatelessWidget{
               ),
             ),
             SizedBox(height: 80.0,),
+            SizedBox(height: 20.0),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(40.0),
+              child: Container(
+                color: Colors.blue,
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 25.0),
+                  child: TextButton(
+                    onPressed: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context){
+                        return MenuPage();
+                      }));
+                    },
+                    child: Text(
+                      'Checkout',
+                      style: const TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18),
+                    ),
+                  ),
+                ),
+              ),
+            ),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: ClipRRect(

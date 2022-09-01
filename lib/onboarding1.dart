@@ -12,7 +12,7 @@ class OnboardPage1 extends StatelessWidget{
           padding: EdgeInsets.all(10.0),
           child: Column(
             children: [
-              SizedBox(height: 50.0),
+              SizedBox(height: 20.0),
               ClipRRect(
                 borderRadius: BorderRadius.circular(40.0),
                 child: Image.asset('images/onboardpic1.jpg'),
@@ -27,7 +27,7 @@ class OnboardPage1 extends StatelessWidget{
                       fontSize: 26),
                 ),
               ),
-              SizedBox(height: 50.0),
+              SizedBox(height: 30.0),
               Container(
                 child: Padding(
                   padding: EdgeInsets.all(25.0),
@@ -63,7 +63,7 @@ class OnboardPage1 extends StatelessWidget{
                   ),
                 ),
               ),
-              SizedBox(height: 20.0,),
+              SizedBox(height: 10.0,),
               Container(
                 child: TextButton(
                   onPressed: (){
