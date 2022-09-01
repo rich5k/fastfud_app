@@ -39,6 +39,13 @@ class ContactPage extends StatelessWidget{
               ),
             ),
             SizedBox(height: 20.0),
+            TextField(
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                hintText: '+233 546 789-09-87',
+              ),
+            ),
+            SizedBox(height: 20.0),
             Container(
               child: Text(
                   'By continuing you agree to the collection'
