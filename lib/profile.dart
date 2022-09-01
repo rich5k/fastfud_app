@@ -57,7 +57,7 @@ class ProfilePage extends StatelessWidget{
                   fontSize: 14),
             ),
           ),
-          SizedBox(height: 70.0),
+          SizedBox(height: 50.0),
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: ClipRRect(
