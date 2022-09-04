@@ -1,3 +1,4 @@
+import 'package:fastfud/shortcode.dart';
 import 'package:flutter/material.dart';
 
 class ContactPage extends StatelessWidget{
@@ -68,7 +69,7 @@ class ContactPage extends StatelessWidget{
                   child: TextButton(
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context){
-                        return MenuPage();
+                        return ShortCodePage();
                       }));
                     },
                     child: Text(
