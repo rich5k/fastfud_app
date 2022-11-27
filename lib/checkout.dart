@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'cart.dart';
 import 'menu.dart';
 import 'profile.dart';
+import 'tracking_map.dart';
 
 class CheckoutPage extends StatelessWidget{
   @override
@@ -38,6 +39,7 @@ class CheckoutPage extends StatelessWidget{
                   'Total Amount:',
                   style: const TextStyle(
                       fontWeight: FontWeight.bold,
+                      color: Color.fromRGBO(170, 170, 170, 1.0),
                       fontSize: 24
                   )
               ),
@@ -51,18 +53,37 @@ class CheckoutPage extends StatelessWidget{
               ),
             ],
           ),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(20.0),
+          SizedBox(height: 70.0,),
+          Card(
+            elevation: 4.0,
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+            ),
             child: Column(
               children: [
-                Text(
-                    'Card Number',
-                    style: const TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24
-                    )
+                Row(
+                  children: [
+                    Text(
+                        'Card Number',
+                        style: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24
+                        )
+                    ),
+                    SizedBox(width: 100.0,),
+                    Icon(
+                      Icons.credit_card,
+                      color: Colors.blue,
+                      size: 30.0,
+                    ),
+                  ],
                 ),
-                SizedBox(width: 10.0,),
+                SizedBox(height: 10.0,),
+                Text('4214 5545 7414 2142',
+                    style: const TextStyle(
+                        fontSize: 20
+                    )),
+                SizedBox(height: 10.0,),
                 Row(
                   children: [
                     Text(
@@ -72,7 +93,7 @@ class CheckoutPage extends StatelessWidget{
                             fontSize: 24
                         )
                     ),
-                    SizedBox(width: 10.0,),
+                    SizedBox(width: 120.0,),
                     Text(
                         'CVV',
                         style: const TextStyle(
@@ -80,9 +101,14 @@ class CheckoutPage extends StatelessWidget{
                             fontSize: 24
                         )
                     ),
-                    SizedBox(width: 10.0,),
+
                   ],
                 ),
+                SizedBox(height: 10.0,),
+                Text('09/20',
+                    style: const TextStyle(
+                        fontSize: 20
+                    )),
               ],
             ),
           ),
@@ -92,11 +118,11 @@ class CheckoutPage extends StatelessWidget{
             child: Container(
               color: Colors.blue,
               child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25.0),
+                padding: EdgeInsets.symmetric(horizontal: 50.0),
                 child: TextButton(
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context){
-                      return MenuPage();
+                      return TrackingMapPage();
                     }));
                   },
                   child: Text(
