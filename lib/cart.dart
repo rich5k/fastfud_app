@@ -1,3 +1,4 @@
+import 'package:fastfud/checkout.dart';
 import 'package:flutter/material.dart';
 import 'profile.dart';
 import 'menu.dart';
@@ -360,7 +361,7 @@ class CartPage extends StatelessWidget{
                     child: TextButton(
                       onPressed: (){
                         Navigator.push(context, MaterialPageRoute(builder: (context){
-                          return MenuPage();
+                          return CheckoutPage();
                         }));
                       },
                       child: Text(
