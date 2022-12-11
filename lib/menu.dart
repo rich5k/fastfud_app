@@ -223,12 +223,13 @@ class MenuPage extends StatelessWidget{
                   ],
                 ),
               ),
+              SizedBox(height: 20.0,),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(40),
                   child: Padding(
-                    padding: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.symmetric(horizontal: 30.0),
                     child: Container(
                       color: Color.fromRGBO(236, 234, 232, 1.0),
                       child: Row(
@@ -303,7 +304,7 @@ class MenuPage extends StatelessWidget{
                               ),
                             ),
                           ),
-                          SizedBox(width: 6.0,),
+                          SizedBox(width: 3.0,),
                           Container(
                             child: TextButton(
                               onPressed: (){

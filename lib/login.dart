@@ -1,3 +1,4 @@
+import 'package:fastfud/sign_up.dart';
 import 'package:flutter/material.dart';
 import 'menu.dart';
 
@@ -28,31 +29,54 @@ class LoginPage extends StatelessWidget{
                     SizedBox(height: 20.0,),
                     Row(
                       children: [
-                        SizedBox(width: 70.0),
-                        Icon(
-                          Icons.lock,
-                          color: Colors.white,
-                          size: 20.0,
+                        SizedBox(width: 60.0),
+                        TextButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return LoginPage();
+                            }));
+                          },
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.lock,
+                                color: Colors.white,
+                                size: 20.0,
+                              ),
+                              Text(
+                                'Login',
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    // fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              ),
+                            ],
+                          ),
                         ),
-                        Text(
-                          'Login',
-                          style: const TextStyle(
-                              color: Colors.white,
-                              // fontWeight: FontWeight.bold,
-                              fontSize: 16),
-                        ),
+
                         SizedBox(width: 150.0),
-                        Icon(
-                          Icons.person_add_alt_rounded,
-                          color: Colors.white,
-                          size: 20.0,
-                        ),
-                        Text(
-                          'Sign up',
-                          style: const TextStyle(
-                              color: Colors.white,
-                              // fontWeight: FontWeight.bold,
-                              fontSize: 16),
+                        TextButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return SignUpPage();
+                            }));
+                          },
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.person_add_alt_rounded,
+                                color: Colors.white,
+                                size: 20.0,
+                              ),
+                              Text(
+                                'Sign up',
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    // fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     )

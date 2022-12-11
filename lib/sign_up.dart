@@ -1,3 +1,4 @@
+import 'package:fastfud/login.dart';
 import 'package:flutter/material.dart';
 import 'menu.dart';
 
@@ -15,34 +16,57 @@ class SignUpPage extends StatelessWidget{
                 color: Color.fromRGBO(0, 160, 173, 1.0),
                 child: Column(
                   children: [
-                    SizedBox(height: 60.0,),
+                    SizedBox(height: 50.0,),
                     Row(
                       children: [
-                        SizedBox(width: 70.0),
-                        Icon(
-                          Icons.lock,
-                          color: Colors.white,
-                          size: 20.0,
+                        SizedBox(width: 40.0),
+                        TextButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return LoginPage();
+                            }));
+                          },
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.lock,
+                                color: Colors.white,
+                                size: 20.0,
+                              ),
+                              Text(
+                                'Login',
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    // fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              ),
+                            ],
+                          ),
                         ),
-                        Text(
-                          'Login',
-                          style: const TextStyle(
-                              color: Colors.white,
-                              // fontWeight: FontWeight.bold,
-                              fontSize: 16),
-                        ),
+
                         SizedBox(width: 150.0),
-                        Icon(
-                          Icons.person_add_alt_rounded,
-                          color: Colors.white,
-                          size: 20.0,
-                        ),
-                        Text(
-                          'Sign up',
-                          style: const TextStyle(
-                              color: Colors.white,
-                              // fontWeight: FontWeight.bold,
-                              fontSize: 16),
+                        TextButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                              return SignUpPage();
+                            }));
+                          },
+                          child: Row(
+                            children: [
+                              Icon(
+                                Icons.person_add_alt_rounded,
+                                color: Colors.white,
+                                size: 20.0,
+                              ),
+                              Text(
+                                'Sign up',
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    // fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     )
@@ -59,7 +83,7 @@ class SignUpPage extends StatelessWidget{
                   padding: const EdgeInsets.symmetric(horizontal: 58.0),
                   child: Container(
                     color: Colors.black,
-                    width: 75.0,
+                    width: 80.0,
                     height: 5.0,
                   ),
                 ),
@@ -126,20 +150,20 @@ class SignUpPage extends StatelessWidget{
                   child: TextButton(
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context){
-                        return MenuPage();
+                        return LoginPage();
                       }));
                     },
                     child: Container(
-                      margin: EdgeInsets.symmetric(horizontal: 80.0),
+                      margin: EdgeInsets.symmetric(horizontal: 70.0),
                       child: Row(
                         children: [
                           Icon(
-                            Icons.lock,
+                            Icons.person_add_alt_rounded,
                             color: Colors.white,
                             size: 20.0,
                           ),
                           Text(
-                            'Login',
+                            'Sign-up',
                             style: const TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
