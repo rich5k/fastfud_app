@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget{
                 color: Color.fromRGBO(0, 160, 173, 1.0),
                 child: Column(
                   children: [
-                  Image.asset('images/bike_icon.png', height: 200.0, width: 200.0,),
+                  Image.asset('images/moped_icon.png', height: 200.0, width: 200.0,),
                     SizedBox(height: 10.0,),
                     Text(
                       'Fast Fud',

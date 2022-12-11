@@ -54,62 +54,95 @@ class CheckoutPage extends StatelessWidget{
             ],
           ),
           SizedBox(height: 70.0,),
-          Card(
-            elevation: 4.0,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(20.0),
-            ),
-            child: Column(
-              children: [
-                Row(
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Card(
+              elevation: 8.0,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(20.0),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
                   children: [
-                    Text(
-                        'Card Number',
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24
-                        )
+                    Row(
+                      children: [
+                        Text(
+                            'Card Number',
+                            style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24
+                            )
+                        ),
+                        SizedBox(width: 150.0,),
+                        Icon(
+                          Icons.credit_card,
+                          color: Colors.blue,
+                          size: 30.0,
+                        ),
+                      ],
                     ),
-                    SizedBox(width: 100.0,),
-                    Icon(
-                      Icons.credit_card,
-                      color: Colors.blue,
-                      size: 30.0,
+                    // SizedBox(height: 10.0,),
+                    TextField(
+                      decoration: InputDecoration(
+                        enabledBorder: UnderlineInputBorder( //<-- SEE HERE
+                          borderSide: BorderSide(
+                              width: 3, color: Colors.black),
+                        ),
+                      ),
                     ),
-                  ],
-                ),
-                SizedBox(height: 10.0,),
-                Text('4214 5545 7414 2142',
-                    style: const TextStyle(
-                        fontSize: 20
-                    )),
-                SizedBox(height: 10.0,),
-                Row(
-                  children: [
-                    Text(
-                        'Exp. Date',
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24
-                        )
-                    ),
-                    SizedBox(width: 120.0,),
-                    Text(
-                        'CVV',
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 24
-                        )
-                    ),
+                    SizedBox(height: 10.0,),
+                    Row(
+                      children: [
+                        Text(
+                            'Exp. Date',
+                            style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24
+                            )
+                        ),
+                        SizedBox(width: 120.0,),
+                        Text(
+                            'CVV',
+                            style: const TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24
+                            )
+                        ),
 
+                      ],
+                    ),
+                    // SizedBox(height: 10.0,),
+                    Row(
+                      children: [
+                        SizedBox(
+                          width: 120.0,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              enabledBorder: UnderlineInputBorder( //<-- SEE HERE
+                                borderSide: BorderSide(
+                                    width: 3, color: Colors.black),
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 100.0,),
+                        SizedBox(
+                          width: 100.0,
+                          child: TextField(
+                            decoration: InputDecoration(
+                              enabledBorder: UnderlineInputBorder( //<-- SEE HERE
+                                borderSide: BorderSide(
+                                    width: 3, color: Colors.black),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    )
                   ],
                 ),
-                SizedBox(height: 10.0,),
-                Text('09/20',
-                    style: const TextStyle(
-                        fontSize: 20
-                    )),
-              ],
+              ),
             ),
           ),
           SizedBox(height: 40.0,),
@@ -140,9 +173,9 @@ class CheckoutPage extends StatelessWidget{
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(40),
+              borderRadius: BorderRadius.circular(60.0),
               child: Padding(
-                padding: const EdgeInsets.all(15.0),
+                padding: const EdgeInsets.symmetric(horizontal: 40.0),
                 child: Container(
                   color: Color.fromRGBO(236, 234, 232, 1.0),
                   child: Row(

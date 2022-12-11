@@ -1,21 +1,15 @@
+import 'package:fastfud/start_page.dart';
 import 'package:flutter/material.dart';
-// import 'start_page.dart';
-import 'onboarding1.dart';
-import 'checkout.dart';
 void main() {
-  return runApp(
-      FastFud()
-  );
+  return runApp(new MaterialApp(
+    home: new FastFud(),
+  ));
 }
 
-class FastFud extends StatelessWidget{
+class FastFud extends StatefulWidget{
   @override
+  StartPage createState() => new StartPage();
 
-  Widget build(BuildContext context){
-    return MaterialApp(
-      home: CheckoutPage(),
-    );
-  }
 }
 
 

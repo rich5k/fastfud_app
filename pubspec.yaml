@@ -38,6 +38,7 @@ dependencies:
   google_maps_flutter: ^2.1.7
   location: ^4.4.0
   flutter_svg: ^1.1.0
+  splashscreen: ^1.3.5
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +74,7 @@ flutter:
     - images/bike_icon.png
     - images/profile pic.jpg
     - images/maps.jpg
+    - images/moped_icon.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
