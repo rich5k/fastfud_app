@@ -1,4 +1,5 @@
 import 'package:fastfud/login.dart';
+import 'package:fastfud/shortcode.dart';
 import 'package:flutter/material.dart';
 import 'menu.dart';
 
@@ -150,7 +151,7 @@ class SignUpPage extends StatelessWidget{
                   child: TextButton(
                     onPressed: (){
                       Navigator.push(context, MaterialPageRoute(builder: (context){
-                        return LoginPage();
+                        return ShortCodePage();
                       }));
                     },
                     child: Container(

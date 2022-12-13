@@ -53,14 +53,113 @@ class MenuPage extends StatelessWidget{
                   Container(
                   // width: MediaQuery.of(context).size.width - 100.0,
                   height: 120.0,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(40.0),
-                      image: DecorationImage(
-                          image: AssetImage('images/menupic1.jpg')
-                      )
+                  child:Stack(
+                      children: <Widget>[
+                        Image.asset('images/menupic1.jpg'),
+                        Column(
+                          children: [
+                            Text(
+                              'Taste',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                )
+                            ),
+                            SizedBox(height: 10.0,),
+                            Text(
+                                'Yourself',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                )
+                            ),
+                            SizedBox(height: 10.0,),
+                            Text(
+                                'Day',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                )
+                            ),
+                          ],
+                        ),
+                      ]
                   ),
-                  child: Center(child: Text('Taste Yourself Day',),),
+                  // decoration: BoxDecoration(
+                  //     borderRadius: BorderRadius.circular(40.0),
+                  //     image: DecorationImage(
+                  //         image: AssetImage('images/menupic1.jpg')
+                  //     )
+                  // ),
+                  // child: Center(child: Text('Taste Yourself Day',),),
                 ),
+                  SizedBox(width: 30.0,),
+                  Container(
+                    // width: MediaQuery.of(context).size.width - 100.0,
+                    height: 120.0,
+                    child:Stack(
+                        children: <Widget>[
+                          Image.asset('images/menupic3.jpg'),
+                          Column(
+                            children: [
+                              Text(
+                                  'Tasty',
+                                  style: const TextStyle(
+                                    // color: Colors.white,
+                                  )
+                              ),
+                              SizedBox(height: 10.0,),
+                              Text(
+                                  'Tuts',
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                  )
+                              ),
+
+                            ],
+                          ),
+                        ]
+                    ),
+                    // decoration: BoxDecoration(
+                    //     borderRadius: BorderRadius.circular(40.0),
+                    //     image: DecorationImage(
+                    //         image: AssetImage('images/menupic1.jpg')
+                    //     )
+                    // ),
+                    // child: Center(child: Text('Taste Yourself Day',),),
+                  ),
+                  SizedBox(width: 30.0,),
+                  Container(
+                    // width: MediaQuery.of(context).size.width - 100.0,
+                    height: 120.0,
+                    child:Stack(
+                        children: <Widget>[
+                          Image.asset('images/menupic4.jpg'),
+                          Column(
+                            children: [
+                              Text(
+                                  'Summer',
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                  )
+                              ),
+                              SizedBox(height: 10.0,),
+                              Text(
+                                  'Combo',
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                  )
+                              ),
+
+                            ],
+                          ),
+                        ]
+                    ),
+                    // decoration: BoxDecoration(
+                    //     borderRadius: BorderRadius.circular(40.0),
+                    //     image: DecorationImage(
+                    //         image: AssetImage('images/menupic1.jpg')
+                    //     )
+                    // ),
+                    // child: Center(child: Text('Taste Yourself Day',),),
+                  ),
                 ]
               ),
               SizedBox(height: 20.0,),
