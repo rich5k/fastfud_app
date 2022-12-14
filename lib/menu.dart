@@ -309,11 +309,48 @@ class MenuPage extends StatelessWidget{
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12),
                           ),
-                          SizedBox(height: 20.0,),
-                          // Text(
-                          //       'Shrimp in crispy and sweet wasabi sauce, daikon,'
-                          //       'Pal potatoes, flying fish noe, Kimichi sesame'
-                          // ),
+                          SizedBox(height: 10.0,),
+                          Text(
+                                'Shrimp in crispy and sweet wasabi sauce, daikon,',
+                            textAlign: TextAlign.left,
+                            style: const TextStyle(
+                                color: Colors.grey,
+                                fontSize: 10),
+                          ),
+                          Text(
+                                'Pal potatoes, flying fish noe, Kimichi sesame',
+                            textAlign: TextAlign.left,
+                            style: const TextStyle(
+                                color: Colors.grey,
+                                fontSize: 10),
+                          ),
+                          Row(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(30.0),
+                                child: Container(
+                                  // margin: EdgeInsets.only(right:23),
+                                  color: Color.fromRGBO(0, 160, 173, 1.0),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(6.0),
+                                    child: Text(
+                                      'GHS 53',
+                                      style: const TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 10),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(width: 10.0,),
+                              Icon(
+                                Icons.favorite_border,
+                                color: Color.fromRGBO(0, 160, 173, 1.0),
+                                size: 20.0,
+                              ),
+                            ],
+                          )
                         ],
                       ),
                     )
