@@ -61,6 +61,7 @@ class MenuPage extends StatelessWidget{
                             Text(
                               'Taste',
                                 style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 )
                             ),
@@ -68,6 +69,7 @@ class MenuPage extends StatelessWidget{
                             Text(
                                 'Yourself',
                                 style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 )
                             ),
@@ -75,21 +77,15 @@ class MenuPage extends StatelessWidget{
                             Text(
                                 'Day',
                                 style: const TextStyle(
+                                  fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 )
                             ),
                           ],
                         ),
                       ]
+                    ),
                   ),
-                  // decoration: BoxDecoration(
-                  //     borderRadius: BorderRadius.circular(40.0),
-                  //     image: DecorationImage(
-                  //         image: AssetImage('images/menupic1.jpg')
-                  //     )
-                  // ),
-                  // child: Center(child: Text('Taste Yourself Day',),),
-                ),
                   SizedBox(width: 30.0,),
                   Container(
                     // width: MediaQuery.of(context).size.width - 100.0,
@@ -102,14 +98,14 @@ class MenuPage extends StatelessWidget{
                               Text(
                                   'Tasty',
                                   style: const TextStyle(
-                                    // color: Colors.white,
+                                    fontWeight: FontWeight.bold,
                                   )
                               ),
                               SizedBox(height: 10.0,),
                               Text(
                                   'Tuts',
                                   style: const TextStyle(
-                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
                                   )
                               ),
 
@@ -117,13 +113,6 @@ class MenuPage extends StatelessWidget{
                           ),
                         ]
                     ),
-                    // decoration: BoxDecoration(
-                    //     borderRadius: BorderRadius.circular(40.0),
-                    //     image: DecorationImage(
-                    //         image: AssetImage('images/menupic1.jpg')
-                    //     )
-                    // ),
-                    // child: Center(child: Text('Taste Yourself Day',),),
                   ),
                   SizedBox(width: 30.0,),
                   Container(
@@ -137,6 +126,7 @@ class MenuPage extends StatelessWidget{
                               Text(
                                   'Summer',
                                   style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
                                     color: Colors.white,
                                   )
                               ),
@@ -144,6 +134,7 @@ class MenuPage extends StatelessWidget{
                               Text(
                                   'Combo',
                                   style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
                                     color: Colors.white,
                                   )
                               ),
@@ -152,13 +143,6 @@ class MenuPage extends StatelessWidget{
                           ),
                         ]
                     ),
-                    // decoration: BoxDecoration(
-                    //     borderRadius: BorderRadius.circular(40.0),
-                    //     image: DecorationImage(
-                    //         image: AssetImage('images/menupic1.jpg')
-                    //     )
-                    // ),
-                    // child: Center(child: Text('Taste Yourself Day',),),
                   ),
                 ]
               ),
@@ -175,15 +159,125 @@ class MenuPage extends StatelessWidget{
               SizedBox(height: 10.0,),
               Row(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(20.0),
-                    child: Image.asset(
-                      'images/menupic2.jpg',
-                      height:60,
-                      width:120,
-                        fit:BoxFit.fill
-                    ),
-                  )
+                  Stack(
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                            'images/menupic2.jpg',
+                            height:90,
+                            width:170,
+                            fit:BoxFit.fill
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          SizedBox(height: 10.0,),
+                          Row(
+                            children: [
+                              SizedBox(width: 120.0,),
+                              Icon(
+                                Icons.favorite,
+                                color: Color.fromRGBO(0, 160, 173, 1.0),
+                                size: 25.0,
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 20.0,),
+                          Row(
+                            children: [
+                              SizedBox(width: 10.0,),
+                              Text(
+                                  'Tom Yam',
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  )
+                              ),
+                              SizedBox(width: 50.0,),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(30.0),
+                                child: Container(
+                                  // margin: EdgeInsets.only(right:23),
+                                  color: Color.fromRGBO(0, 160, 173, 1.0),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(6.0),
+                                    child: Text(
+                                      'GHS 40',
+                                      style: const TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 10),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                  SizedBox(width: 15.0,),
+                  Stack(
+                    children: <Widget>[
+                      ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset(
+                            'images/menupic5.jpg',
+                            height:90,
+                            width:170,
+                            fit:BoxFit.fill
+                        ),
+                      ),
+                      Column(
+                        children: [
+                          SizedBox(height: 10.0,),
+                          Row(
+                            children: [
+                              SizedBox(width: 120.0,),
+                              Icon(
+                                Icons.favorite,
+                                color: Color.fromRGBO(0, 160, 173, 1.0),
+                                size: 25.0,
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 20.0,),
+                          Row(
+                            children: [
+                              SizedBox(width: 10.0,),
+                              Text(
+                                  'Phad Thai',
+                                  style: const TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  )
+                              ),
+                              SizedBox(width: 50.0,),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(30.0),
+                                child: Container(
+                                  // margin: EdgeInsets.only(right:23),
+                                  color: Color.fromRGBO(0, 160, 173, 1.0),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(6.0),
+                                    child: Text(
+                                      'GHS 40',
+                                      style: const TextStyle(
+                                          color: Colors.white,
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 10),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
                 ],
               ),
               SizedBox(height: 20.0,),
@@ -354,8 +448,6 @@ class MenuPage extends StatelessWidget{
                         ],
                       ),
                     )
-
-
                   ],
                 ),
               ),
