@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'profile.dart';
 import 'cart.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 class MenuPage extends StatelessWidget{
 
@@ -157,129 +158,150 @@ class MenuPage extends StatelessWidget{
                 ),
               ),
               SizedBox(height: 10.0,),
-              Row(
+              ListView(
+                shrinkWrap: true,
                 children: [
-                  Stack(
-                    children: <Widget>[
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset(
-                            'images/menupic2.jpg',
-                            height:90,
-                            width:170,
-                            fit:BoxFit.fill
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          SizedBox(height: 10.0,),
-                          Row(
-                            children: [
-                              SizedBox(width: 120.0,),
-                              Icon(
-                                Icons.favorite,
-                                color: Color.fromRGBO(0, 160, 173, 1.0),
-                                size: 25.0,
-                              ),
-                            ],
+                  CarouselSlider(
+                    items:[
+                      Stack(
+                        children: <Widget>[
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                                'images/menupic2.jpg',
+                                height:90,
+                                width:170,
+                                fit:BoxFit.fill
+                            ),
                           ),
-                          SizedBox(height: 20.0,),
-                          Row(
+                          Column(
                             children: [
-                              SizedBox(width: 10.0,),
-                              Text(
-                                  'Tom Yam',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  )
+                              SizedBox(height: 10.0,),
+                              Row(
+                                children: [
+                                  SizedBox(width: 120.0,),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: Color.fromRGBO(0, 160, 173, 1.0),
+                                    size: 25.0,
+                                  ),
+                                ],
                               ),
-                              SizedBox(width: 50.0,),
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(30.0),
-                                child: Container(
-                                  // margin: EdgeInsets.only(right:23),
-                                  color: Color.fromRGBO(0, 160, 173, 1.0),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(6.0),
-                                    child: Text(
-                                      'GHS 40',
+                              SizedBox(height: 20.0,),
+                              Row(
+                                children: [
+                                  SizedBox(width: 10.0,),
+                                  Text(
+                                      'Tom Yam',
                                       style: const TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 10),
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      )
+                                  ),
+                                  SizedBox(width: 50.0,),
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(30.0),
+                                    child: Container(
+                                      // margin: EdgeInsets.only(right:23),
+                                      color: Color.fromRGBO(0, 160, 173, 1.0),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(6.0),
+                                        child: Text(
+                                          'GHS 40',
+                                          style: const TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 10),
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                ),
+                                ],
                               ),
                             ],
-                          ),
+                          )
                         ],
-                      )
-                    ],
-                  ),
-                  SizedBox(width: 15.0,),
-                  Stack(
-                    children: <Widget>[
-                      ClipRRect(
-                        borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset(
-                            'images/menupic5.jpg',
-                            height:90,
-                            width:170,
-                            fit:BoxFit.fill
-                        ),
                       ),
-                      Column(
-                        children: [
-                          SizedBox(height: 10.0,),
-                          Row(
-                            children: [
-                              SizedBox(width: 120.0,),
-                              Icon(
-                                Icons.favorite,
-                                color: Color.fromRGBO(0, 160, 173, 1.0),
-                                size: 25.0,
-                              ),
-                            ],
+                      Stack(
+                        children: <Widget>[
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(20.0),
+                            child: Image.asset(
+                                'images/menupic5.jpg',
+                                height:90,
+                                width:170,
+                                fit:BoxFit.fill
+                            ),
                           ),
-                          SizedBox(height: 20.0,),
-                          Row(
+                          Column(
                             children: [
-                              SizedBox(width: 10.0,),
-                              Text(
-                                  'Phad Thai',
-                                  style: const TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.white,
-                                  )
+                              SizedBox(height: 10.0,),
+                              Row(
+                                children: [
+                                  SizedBox(width: 120.0,),
+                                  Icon(
+                                    Icons.favorite,
+                                    color: Color.fromRGBO(0, 160, 173, 1.0),
+                                    size: 25.0,
+                                  ),
+                                ],
                               ),
-                              SizedBox(width: 50.0,),
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(30.0),
-                                child: Container(
-                                  // margin: EdgeInsets.only(right:23),
-                                  color: Color.fromRGBO(0, 160, 173, 1.0),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(6.0),
-                                    child: Text(
-                                      'GHS 40',
+                              SizedBox(height: 20.0,),
+                              Row(
+                                children: [
+                                  SizedBox(width: 10.0,),
+                                  Text(
+                                      'Phad Thai',
                                       style: const TextStyle(
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,
-                                          fontSize: 10),
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.white,
+                                      )
+                                  ),
+                                  SizedBox(width: 50.0,),
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(30.0),
+                                    child: Container(
+                                      // margin: EdgeInsets.only(right:23),
+                                      color: Color.fromRGBO(0, 160, 173, 1.0),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(6.0),
+                                        child: Text(
+                                          'GHS 40',
+                                          style: const TextStyle(
+                                              color: Colors.white,
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 10),
+                                        ),
+                                      ),
                                     ),
                                   ),
-                                ),
+                                ],
                               ),
                             ],
-                          ),
+                          )
                         ],
-                      )
+                      ),
                     ],
-                  ),
-                ],
+                    options: CarouselOptions(
+                        height: 80.0,
+                        enlargeCenterPage: true,
+                        autoPlay: true,
+                        // aspectRatio: 16 / 9,
+                        autoPlayCurve: Curves.fastOutSlowIn,
+                        enableInfiniteScroll: true,
+                        autoPlayAnimationDuration: Duration(milliseconds: 800),
+                        viewportFraction: 0.8,
+                    ),
+                  )
+                ]
               ),
+              // Row(
+              //   children: [
+              //
+              //     SizedBox(width: 15.0,),
+              //
+              //   ],
+              // ),
               SizedBox(height: 20.0,),
               Container(
                 child: Text(

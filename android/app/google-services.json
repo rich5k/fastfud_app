@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "805111318733",
+    "project_id": "fastfud-889b6",
+    "storage_bucket": "fastfud-889b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805111318733:android:af4ca6e8895e0d9a674184",
+        "android_client_info": {
+          "package_name": "com.example.fastfud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "805111318733-pvie88lpl2vk0kqn2og3mf81ku2l86sh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcJV3EZAN6WryVdzlFXMK0EZQjgX3XtxA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "805111318733-pvie88lpl2vk0kqn2og3mf81ku2l86sh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
