@@ -1,7 +1,7 @@
 import 'package:fastfud/login.dart';
 import 'package:fastfud/shortcode.dart';
 import 'package:flutter/material.dart';
-import 'menu.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class SignUpPage extends StatelessWidget{
 

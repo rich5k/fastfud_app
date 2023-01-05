@@ -1,11 +1,26 @@
 import 'package:fastfud/sign_up.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'menu.dart';
 
-class LoginPage extends StatelessWidget{
-  
+class LoginPage extends StatefulWidget{
   @override
-  Widget build(BuildContext context){
+  _LoginWidgetState createState()=> _LoginWidgetState();
+}
+class _LoginWidgetState extends State<LoginPage> {
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+
+  @override
+  void dispose(){
+    emailController.dispose();
+    passwordController.dispose();
+
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
@@ -16,7 +31,8 @@ class LoginPage extends StatelessWidget{
                 color: Color.fromRGBO(0, 160, 173, 1.0),
                 child: Column(
                   children: [
-                  Image.asset('images/moped_icon.png', height: 200.0, width: 200.0,),
+                    Image.asset(
+                      'images/moped_icon.png', height: 200.0, width: 200.0,),
                     SizedBox(height: 10.0,),
                     Text(
                       'Fast Fud',
@@ -31,8 +47,9 @@ class LoginPage extends StatelessWidget{
                       children: [
                         SizedBox(width: 60.0),
                         TextButton(
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                          onPressed: () {
+                            Navigator.push(
+                                context, MaterialPageRoute(builder: (context) {
                               return LoginPage();
                             }));
                           },
@@ -56,8 +73,9 @@ class LoginPage extends StatelessWidget{
 
                         SizedBox(width: 150.0),
                         TextButton(
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context){
+                          onPressed: () {
+                            Navigator.push(
+                                context, MaterialPageRoute(builder: (context) {
                               return SignUpPage();
                             }));
                           },
@@ -101,10 +119,11 @@ class LoginPage extends StatelessWidget{
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-                child: TextFormField(
+              child: TextFormField(
+                controller: emailController,
                 decoration: const InputDecoration(
-                border: UnderlineInputBorder(),
-                labelText: 'Email address',
+                  border: UnderlineInputBorder(),
+                  labelText: 'Email address',
                 ),
               ),
             ),
@@ -112,6 +131,7 @@ class LoginPage extends StatelessWidget{
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
               child: TextFormField(
+                controller: passwordController,
                 obscureText: true,
                 decoration: const InputDecoration(
                   border: UnderlineInputBorder(),
@@ -127,11 +147,7 @@ class LoginPage extends StatelessWidget{
                 child: Container(
                   color: Colors.black,
                   child: TextButton(
-                    onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context){
-                        return MenuPage();
-                      }));
-                    },
+                    onPressed: signIn,
                     child: Container(
                       margin: EdgeInsets.symmetric(horizontal: 80.0),
                       child: Row(
@@ -160,4 +176,10 @@ class LoginPage extends StatelessWidget{
       ),
     );
   }
-}
+    Future signIn() async{
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+          email: emailController.text.trim(),
+          password: passwordController.text.trim()
+      );
+    }
+  }

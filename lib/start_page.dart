@@ -1,5 +1,7 @@
 import 'package:fastfud/login.dart';
 import 'package:fastfud/main.dart';
+import 'package:fastfud/menu.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 
@@ -18,7 +20,16 @@ class StartPage extends State<FastFud>{
   Widget build(BuildContext context){
     return new SplashScreen(
       seconds: 10,
-      navigateAfterSeconds: new LoginPage(),
+      navigateAfterSeconds: StreamBuilder<User?>(
+        stream: FirebaseAuth.instance.authStateChanges(),
+        builder: (context, snapshot){
+          if(snapshot.hasData){
+            return MenuPage();
+          }else{
+            return LoginPage();
+          }
+        },
+      ),
       backgroundColor: Color.fromRGBO(0, 160 , 173, 1.0),
       image: Image.asset('images/moped_icon.png'),
       title: new Text(
