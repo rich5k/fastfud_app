@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'profile.dart';
 import 'menu.dart';
@@ -7,6 +8,8 @@ class ProfilePage extends StatelessWidget{
 
   @override
   Widget build(BuildContext context){
+    final user = FirebaseAuth.instance.currentUser;
+
     return Scaffold(
       body: Column(
         children: [
@@ -47,14 +50,17 @@ class ProfilePage extends StatelessWidget{
                 '+233 23 456 7890'
             ),
           ),
-          SizedBox(height: 60.0),
+          SizedBox(height: 40.0),
           Container(
-            child: Text(
-              'log out',
-              style: const TextStyle(
-                  color: Color.fromRGBO(0, 160, 173, 1.0),
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14),
+            child: TextButton(
+              child: Text(
+                'log out',
+                style: const TextStyle(
+                    color: Color.fromRGBO(0, 160, 173, 1.0),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14),
+              ),
+              onPressed: ()=>FirebaseAuth.instance.signOut(),
             ),
           ),
           SizedBox(height: 50.0),

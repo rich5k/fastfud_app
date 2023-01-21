@@ -23,7 +23,15 @@ class StartPage extends State<FastFud>{
       navigateAfterSeconds: StreamBuilder<User?>(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot){
-          if(snapshot.hasData){
+          if(snapshot.connectionState == ConnectionState.waiting){
+            return Center(child: CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.yellowAccent),
+            ));
+          }
+          else if(snapshot.hasError){
+            return Center(child: Text('Something went wrong!'));
+          }
+          else if(snapshot.hasData){
             return MenuPage();
           }else{
             return LoginPage();

@@ -6,10 +6,12 @@ import 'menu.dart';
 class LoginPage extends StatefulWidget{
   @override
   _LoginWidgetState createState()=> _LoginWidgetState();
+
 }
 class _LoginWidgetState extends State<LoginPage> {
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  final navigatorKey= GlobalKey<NavigatorState>();
 
   @override
   void dispose(){
@@ -177,9 +179,23 @@ class _LoginWidgetState extends State<LoginPage> {
     );
   }
     Future signIn() async{
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
-          email: emailController.text.trim(),
-          password: passwordController.text.trim()
+      showDialog(
+          context: context,
+          barrierDismissible: false,
+          builder: (context) => Center(child: CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(Colors.yellowAccent),
+          ))
       );
+      try {
+        await FirebaseAuth.instance.signInWithEmailAndPassword(
+            email: emailController.text.trim(),
+            password: passwordController.text.trim()
+        );
+      }on FirebaseException catch (e){
+        print(e);
+      }
+
+      //Navigartor.of(context) not working!
+      navigatorKey.currentState!.popUntil((route)=>route.isFirst);
     }
   }
